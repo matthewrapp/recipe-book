@@ -1,12 +1,19 @@
-<app-header (featureSelected)="onNavigate($event)"></app-header>
+<app-header></app-header>
 <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<!-- <div class="container">
   <div class="row">
     <div class="col-md-12" [ngSwitch]="loadedFeature">
       <app-recipes *ngSwitchCase="'recipe'"></app-recipes>
       <app-shopping-list *ngSwitchCase="'shopping-list'"></app-shopping-list>
     </div>
   </div>
-</div>
+</div> -->
 <!-- <div class="container">
   <div class="row">
     <div class="col-md-12">
